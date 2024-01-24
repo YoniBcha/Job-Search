@@ -4,9 +4,9 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <router-link to="/" class="flex items-center h-full text-xl"
-          >Bobo Careers</router-link
-        >
+        <router-link to="/" class="flex items-center h-full text-xl">{{
+          title
+        }}</router-link>
       </div>
     </div>
     <router-view />
@@ -15,6 +15,11 @@
 <script>
 export default {
   name: "MainNav",
+  data() {
+    return {
+      title: "Bobo Careers",
+    };
+  },
 };
 </script>
 <style></style>
