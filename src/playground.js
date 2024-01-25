@@ -35,3 +35,10 @@ export const checkEvenOrOdd = (number) => {
     return "Odd";
   }
 };
+export const multiplay = (x, y) => {
+  let total = 0;
+  for (let i = 1; i <= y; i++) {
+    total = total + x;
+  }
+  return total;
+};
